@@ -3,6 +3,7 @@
 ## Overview
 The Swing System App is a queue management solution developed to solve a common challenge at my Cellular Sales local store. This application streamlines customer assignments, ensuring fair distribution of sales opportunities while providing real-time visibility into the queue status.
 
+
 ## Problem Statement
 At Cellular Sales, we faced several challenges with our manual swing system:
 - Difficulty tracking which sales rep should get the next customer
@@ -10,6 +11,24 @@ At Cellular Sales, we faced several challenges with our manual swing system:
 - No visibility into queue status across the sales floor
 - Inconsistent application of queue rules when shifts change
 - Lack of data on customer volume and rep performance
+
+## Testing 🚨 **Important** 
+Since this is a demo version of the actualy application, here are testing emails:
+
+test@test.com
+test123
+
+natelevi@cellularsales.com
+Raygun11
+
+brendenburns@cellularsales.com
+testemail3
+
+lewisporter@cellularsales.com
+testemail4
+
+johncrawford@cellularsales.com
+testemail5
 
 ## Features
 
@@ -41,24 +60,6 @@ At Cellular Sales, we faced several challenges with our manual swing system:
 
 ### Add and Remove Customer
 - This feature allows reps to add a customer to the queue and remove one if needed
-
-## Testing 🚨 **Important** 
-Since this is a demo version of the actualy application, here are testing emails:
-
-test@test.com
-test123
-
-natelevi@cellularsales.com
-Raygun11
-
-brendenburns@cellularsales.com
-testemail3
-
-lewisporter@cellularsales.com
-testemail4
-
-johncrawford@cellularsales.com
-testemail5
 
 ## Technologies Used
 
