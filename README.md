@@ -42,8 +42,9 @@ At Cellular Sales, we faced several challenges with our manual swing system:
 ### Add and Remove Customer
 - This feature allows reps to add a customer to the queue and remove one if needed
 
-## Testing
+## Testing 🚨 **Important** 
 Since this is a demo version of the actualy application, here are testing emails:
+
 test@test.com
 test123
 
