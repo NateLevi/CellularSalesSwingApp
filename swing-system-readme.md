@@ -58,7 +58,7 @@ At Cellular Sales, we faced several challenges with our manual swing system:
 
 ### Database
 - PostgreSQL
-- MongoDB: NoSQL database for flexible data storage
+- Supabase
 
 ### Deployment
 - Netlify: Frontend hosting
@@ -77,7 +77,7 @@ The Swing System App was adopted by our store team and resulted in:
 ### Prerequisites
 - Node.js (v14+)
 - npm or yarn
-- PostgreSQL and MongoDB accounts
+- PostgreSQL and supabase accounts
 
 ### Installation
 ```bash
