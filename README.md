@@ -3,6 +3,7 @@
 ## Overview
 The Swing System App is a queue management solution developed to solve a common challenge at my Cellular Sales local store. This application streamlines customer assignments, ensuring fair distribution of sales opportunities while providing real-time visibility into the queue status.
 
+Please note that after periods of inactivity, the site may take a few seconds to load as the Render-hosted server wakes up from sleep mode.
 
 ## Problem Statement
 At Cellular Sales, we faced several challenges with our manual swing system:
