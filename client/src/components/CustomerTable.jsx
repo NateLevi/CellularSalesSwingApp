@@ -15,29 +15,21 @@ function formatWaitTime(createdAt, currentTime, status) {
   if (status.toLowerCase() === 'helped') {
     return 'Finished';
   }
-
-  try {
-    // Parse the incoming UTC timestamp string ("...Z")
-    const createdAtUTC = dayjs(createdAt);
-
-    // Use the JS Date object for current time directly
-    const createdAtEastern = createdAtUTC.subtract(4, 'hour');
-
-    // Calculate difference in seconds
-    const now = dayjs(currentTime);
-    
-    const diffInSeconds = now.diff(createdAtEastern, 'second');
-    const effectiveDiff = diffInSeconds < 0 ? 0 : diffInSeconds;
-    const minutes = Math.floor(effectiveDiff / 60);
-    const seconds = effectiveDiff % 60;
-
-    return `${minutes}m ${seconds}s`;
-
-  } catch (error) {
-     console.error("Error in dayjs formatWaitTime:", error);
-     return "Error";
-  }
+  
+  // Convert the createdAt (UTC) timestamp to Eastern Time
+  const createdAtEastern = dayjs.utc(createdAt).tz('America/New_York');
+  
+  // Convert currentTime to Eastern Time as well
+  const nowEastern = dayjs(currentTime).tz('America/New_York');
+  
+  const diffInSeconds = nowEastern.diff(createdAtEastern, 'second');
+  const effectiveDiff = diffInSeconds < 0 ? 0 : diffInSeconds;
+  const minutes = Math.floor(effectiveDiff / 60);
+  const seconds = effectiveDiff % 60;
+  
+  return `${minutes}m ${seconds}s`;
 }
+
 const CustomerTable = () => {
   const [customers, setCustomers] = useState([]);
   const [currentTime, setCurrentTime] = useState(new Date());
